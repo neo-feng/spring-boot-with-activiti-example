@@ -38,15 +38,15 @@ public class MyApp {
 
         return new InitializingBean() {
             public void afterPropertiesSet() throws Exception {
-
-                Group group = identityService.newGroup("user");
-                group.setName("users");
-                group.setType("security-role");
-                identityService.saveGroup(group);
-
-                User admin = identityService.newUser("admin");
-                admin.setPassword("admin");
-                identityService.saveUser(admin);
+                //改为使用mysql后 这段代码只能执行一次
+//                Group group = identityService.newGroup("user");
+//                group.setName("users");
+//                group.setType("security-role");
+//                identityService.saveGroup(group);
+//
+//                User admin = identityService.newUser("admin");
+//                admin.setPassword("admin");
+//                identityService.saveUser(admin);
 
             }
         };
