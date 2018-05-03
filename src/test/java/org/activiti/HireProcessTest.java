@@ -22,7 +22,7 @@ import java.util.Map;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = {MyApp.class})
 @WebAppConfiguration
-//@IntegrationTest
+@IntegrationTest
 public class HireProcessTest {
 
     @Autowired
